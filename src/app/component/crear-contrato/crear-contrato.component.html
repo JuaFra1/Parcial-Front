@@ -1,0 +1,28 @@
+<h1>Crear Contrato</h1>
+<form [formGroup]="contratoForm" (ngSubmit)="insertData()">
+    <label for="identificador">Identificador:</label>
+    <input id="identificador" formControlName="identificador" type="text">
+  
+    <label for="valor">Valor:</label>
+    <input id="valor" formControlName="valor" type="number">
+  
+    <label for="nombre_contratante">Nombre del Contratante:</label>
+    <input id="nombre_contratante" formControlName="nombre_contratante" type="text">
+  
+    <label for="documento_contratante">Documento del Contratante:</label>
+    <input id="documento_contratante" formControlName="documento_contratante" type="text">
+  
+    <label for="nombre_contratantista">Nombre del Contratantista:</label>
+    <input id="nombre_contratantista" formControlName="nombre_contratantista" type="text">
+  
+    <label for="documento_contratantista">Documento del Contratantista:</label>
+    <input id="documento_contratantista" formControlName="documento_contratantista" type="text">
+  
+    <label for="fecha_inicial">Fecha Inicial:</label>
+    <input id="fecha_inicial" formControlName="fecha_inicial" type="date">
+  
+    <label for="fecha_final">Fecha Final:</label>
+    <input id="fecha_final" formControlName="fecha_final" type="date">
+  
+    <button type="submit">Crear Contrato</button>
+  </form>
